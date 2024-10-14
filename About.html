@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PassGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .feature-list, .benefits, .testimonials, .support {
+            margin-top: 30px;
+            opacity: 0; /* Initial state for animation */
+            transform: translateY(20px); /* Initial position for animation */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition effects */
+        }
+        .feature-list.show, .benefits.show, .testimonials.show, .support.show {
+            opacity: 1; /* Final state for animation */
+            transform: translateY(0); /* Final position for animation */
+        }
+        .feature-list h2, .benefits h2, .testimonials h2, .support h2 {
+            color: #333;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .feature-list ul, .benefits ul, .testimonials ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li, .benefits li, .testimonials blockquote {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .benefits ul, .testimonials blockquote {
+            margin-bottom: 0;
+        }
+        .benefits li {
+            display: flex;
+            align-items: center;
+        }
+        .benefits li img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .testimonials blockquote {
+            border-left: 5px solid #ff8c00;
+            padding-left: 15px;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">PassGuard</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Feature.html">Features</a>
+                <a href="About.html">About</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>About PassGuard</h1>
+        <p>PassGuard is a powerful and secure password manager designed to help you store, manage, and protect your most important passwords and sensitive information. With PassGuard, you can easily store multiple passwords in an encrypted vault, access them when needed, and autofill login information effortlessly.</p>
+
+        <div class="feature-list">
+            <h2>Key Features:</h2>
+            <ul>
+                <li><strong>Secure Vault:</strong> All your passwords are safely stored in an encrypted vault that only you can access.</li>
+                <li><strong>Autofill:</strong> Automatically fill in login credentials for websites and apps, saving time and effort.</li>
+                <li><strong>Password Generator:</strong> Create strong, unique passwords with ease using our built-in password generator.</li>
+                <li><strong>Multi-Password Storage:</strong> Manage multiple passwords for all your accounts in one convenient place.</li>
+                <li><strong>Advanced Encryption:</strong> PassGuard uses top-tier encryption technology to keep your data secure from unauthorized access.</li>
+            </ul>
+        </div>
+
+        <div class="benefits">
+            <h2>Benefits of Using PassGuard:</h2>
+            <ul>
+                <li><i class="icon">🔒</i> <strong>Enhanced Security:</strong> Protect your personal and financial information with state-of-the-art encryption.</li>
+                <li><i class="icon">⏳</i> <strong>Time-Saving:</strong> Quickly and easily log into websites and apps without the need to remember numerous passwords.</li>
+                <li><i class="icon">📋</i> <strong>Easy Management:</strong> Organize and categorize your passwords and sensitive data effortlessly.</li>
+                <li><i class="icon">❌</i> <strong>Cross-Device Sync:</strong> Access your passwords and information from any device with our secure cloud synchronization.</li>
+            </ul>
+        </div>
+
+        <div class="testimonials">
+            <h2>What Our Users Say:</h2>
+            <blockquote>
+                <p>"PassGuard has transformed the way I manage my passwords. It's secure, easy to use, and has given me peace of mind knowing my information is protected."</p>
+                <footer>– Akshay</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The autofill feature is a game changer. I no longer need to remember every single password. PassGuard does it all for me!"</p>
+                <footer>– Piyush</footer>
+            </blockquote>
+        </div>
+
+        <div class="support">
+            <h2>Support & Contact:</h2>
+            <p>If you have any questions or need assistance, please don't hesitate to reach out to our support team. We are here to help you with any issues or inquiries you may have.</p>
+            <p>Contact us at: <a href="mailto:support@passguard.com">support@passguard.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>PassGuard - Your Passwords, Safely Stored</p>
+        <p><a href="privacy.html">Privacy Policy</a> |
+        <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        // Function to add the 'show' class to elements on scroll
+        function onScroll() {
+            const elements = document.querySelectorAll('.feature-list, .benefits, .testimonials, .support');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    element.classList.add('show');
+                }
+            });
+        }
+
+        // Trigger the onScroll function on page load and scroll
+        window.addEventListener('load', onScroll);
+        window.addEventListener('scroll', onScroll);
+    </script>
+
+</body>
+</html>
+

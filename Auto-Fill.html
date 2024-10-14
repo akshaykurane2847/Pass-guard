@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Fill - PassGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll Animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Box-style rows */
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #ff8c00;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .section ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">PassGuard</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Feature.html">Features</a>
+                <a href="About.html">About</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Auto-Fill</h1>
+        <div class="content">
+            <div class="section">
+                <h2>Automatically Fill Your Credentials on Any Site</h2>
+                <p>With PassGuard's Auto-Fill feature, you can easily log in to your favorite websites without manually entering your username and password. Our advanced auto-fill technology ensures that your login credentials are entered accurately and securely with just a single click.</p>
+            </div>
+
+            <div class="section">
+                <h2>Key Benefits of Auto-Fill</h2>
+                <ul>
+                    <li><strong>Save Time:</strong> Auto-Fill saves you time by automatically entering your credentials on websites, helping you avoid the hassle of remembering multiple passwords.</li>
+                    <li><strong>Accuracy:</strong> Reduce the risk of entering incorrect information or typos with PassGuard’s precise and reliable Auto-Fill feature.</li>
+                    <li><strong>Security:</strong> Your credentials are never exposed to phishing attacks or keyloggers since they are securely filled from your encrypted vault.</li>
+                    <li><strong>Works Across Devices:</strong> Auto-Fill works seamlessly across all your devices, whether you're using your desktop, tablet, or mobile phone.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How Does PassGuard Auto-Fill Work?</h2>
+                <p>PassGuard's Auto-Fill works by detecting login forms on websites and securely filling your credentials stored in the Secure Vault. The process is fully encrypted, and your login details are never exposed in plain text. Here’s how it works:</p>
+                <ul>
+                    <li><strong>Recognizes Login Fields:</strong> PassGuard automatically identifies login fields on supported websites and fills in your credentials securely.</li>
+                    <li><strong>One-Click Login:</strong> With a single click, you can log in to any saved website, minimizing the need for manual entry.</li>
+                    <li><strong>Form Detection:</strong> If PassGuard doesn't detect the form automatically, you can easily trigger auto-fill from your browser extension toolbar.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>PassGuard Browser Extension</h2>
+                <p>To enhance the Auto-Fill experience, PassGuard offers browser extensions for all major browsers, including Chrome, Firefox, and Edge. Here’s what the extension provides:</p>
+                <ul>
+                    <li><strong>Seamless Integration:</strong> The extension integrates directly into your browser, allowing you to use Auto-Fill on any site with just a click.</li>
+                    <li><strong>Secure Access:</strong> Easily access your Secure Vault and use Auto-Fill without leaving your browser.</li>
+                    <li><strong>Context-Aware Filling:</strong> The extension intelligently detects login pages and fills in the correct credentials for you.</li>
+                    <li><strong>Generate Passwords:</strong> Use the extension to generate strong, unique passwords directly in your browser when signing up for new accounts.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Why Use PassGuard's Auto-Fill?</h2>
+                <p>PassGuard’s Auto-Fill is designed to make your online experience faster and more secure:</p>
+                <ul>
+                    <li>Save time by avoiding manual entry of credentials.</li>
+                    <li>Ensure your passwords are filled securely with encryption.</li>
+                    <li>Access your accounts across any device, any time, with Auto-Fill enabled.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Getting Started with Auto-Fill</h2>
+                <p>To start using Auto-Fill, simply install the PassGuard browser extension, log in to your PassGuard account, and begin saving your credentials. Next time you visit a login page, PassGuard will automatically fill in your details for you!</p>
+                <p>Enjoy a seamless and secure browsing experience with PassGuard’s Auto-Fill feature.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>PassGuard - Your Passwords, Safely Stored</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

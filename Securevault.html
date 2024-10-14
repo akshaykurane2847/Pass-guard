@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Vault - PassGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll Animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Box-style rows */
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #ff8c00;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .section ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">PassGuard</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Feature.html">Features</a>
+                <a href="About.html">About</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Secure Vault</h1>
+        <div class="content">
+            <div class="section">
+                <h2>Store All Your Passwords Securely</h2>
+                <p>PassGuard's Secure Vault allows you to securely store all your passwords, credit card information, and sensitive data in one centralized location. With industry-standard encryption, only you can access your vault, ensuring that your personal data remains protected at all times.</p>
+            </div>
+
+            <div class="section">
+                <h2>Key Features of the Secure Vault</h2>
+                <ul>
+                    <li><strong>End-to-End Encryption:</strong> Your data is encrypted locally on your device before it reaches our servers. Only you have access to your master key, and we never store your Master Password.</li>
+                    <li><strong>Unlimited Storage:</strong> Save as many passwords, secure notes, and sensitive documents as you need with no restrictions on storage limits.</li>
+                    <li><strong>Cross-Device Sync:</strong> Access your Secure Vault from any device – desktop, tablet, or mobile – with seamless synchronization across all platforms.</li>
+                    <li><strong>Secure Sharing:</strong> Share your stored passwords with trusted contacts using encrypted links or passcodes, ensuring that your sensitive information remains secure.</li>
+                    <li><strong>Audit & Strength Report:</strong> Review the strength of your stored passwords with our built-in audit feature and receive recommendations on how to improve your security posture.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How Does PassGuard Secure Your Vault?</h2>
+                <p>PassGuard uses state-of-the-art security protocols to ensure that your vault remains safe at all times:</p>
+                <ul>
+                    <li><strong>AES-256 Encryption:</strong> We use Advanced Encryption Standard (AES-256) to encrypt your data at rest, one of the strongest encryption methods available.</li>
+                    <li><strong>Zero-Knowledge Architecture:</strong> Our system is built with a zero-knowledge design, meaning we have no access to your stored information, Master Password, or encryption keys.</li>
+                    <li><strong>Two-Factor Authentication (2FA):</strong> Add an extra layer of security by enabling 2FA on your account. You can use authentication apps like Google Authenticator or receive verification codes via email or SMS.</li>
+                    <li><strong>Biometric Login:</strong> For quick and secure access, you can use fingerprint or face recognition on supported devices instead of entering your Master Password each time.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Why Choose PassGuard's Secure Vault?</h2>
+                <p>PassGuard's Secure Vault offers unmatched protection and convenience:</p>
+                <ul>
+                    <li>All your passwords and sensitive information are stored securely in one place, accessible only to you.</li>
+                    <li>With cross-device syncing, you can access your vault from anywhere, anytime.</li>
+                    <li>Regular security audits and reports help you identify weak passwords and improve your online safety.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Getting Started with the Secure Vault</h2>
+                <p>Creating your Secure Vault is easy. Sign up for a PassGuard account, set a strong Master Password, and start adding your passwords and sensitive data. All your information is encrypted from the moment it’s saved, and you can start using your vault immediately.</p>
+                <p>Enjoy the peace of mind knowing that your digital life is securely stored with PassGuard’s Secure Vault.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>PassGuard - Your Passwords, Safely Stored</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - PassGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll Animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Box-style rows */
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #ff8c00;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .section ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Password Generator Box */
+        .generator {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        .generator label {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .generator input[type="number"] {
+            width: 80px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .generator button {
+            padding: 10px 15px;
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .generator button:hover {
+            background-color: #ff751a;
+        }
+
+        .generator .result {
+            font-size: 18px;
+            color: #333;
+            word-wrap: break-word;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">PassGuard</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Feature.html">Features</a>
+                <a href="About.html">About</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="content">
+            <div class="section">
+                <h2>Create Strong and Unique Passwords Effortlessly</h2>
+                <p>PassGuard's Password Generator allows you to quickly and easily generate strong, unique passwords for all your accounts. Avoid weak or reused passwords by letting PassGuard create a password tailored to your needs.</p>
+            </div>
+
+            <div class="section">
+                <h2>Why Use the Password Generator?</h2>
+                <ul>
+                    <li><strong>Strong Security:</strong> Ensure your accounts are protected with random, complex passwords that are difficult to crack.</li>
+                    <li><strong>Customizable Length:</strong> Choose the length of your password depending on the requirements of the site or your personal preference.</li>
+                    <li><strong>Unique for Every Account:</strong> Generate a different password for every site, reducing the risk of compromised accounts.</li>
+                    <li><strong>One-Click Generation:</strong> Generate strong passwords with just one click and store them securely in your PassGuard vault.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How to Generate a Strong Password?</h2>
+                <p>With PassGuard's Password Generator, you can specify the length of your password and generate a random, secure password instantly. Follow these steps:</p>
+                <ul>
+                    <li>Select your desired password length using the number input field below.</li>
+                    <li>Click the "Generate Password" button.</li>
+                    <li>Copy the generated password and use it for your accounts. You can store it directly in your PassGuard vault for easy access later.</li>
+                </ul>
+            </div>
+
+            <!-- Password Generator Box -->
+            <div class="generator">
+                <label for="length">Select Password Length:</label>
+                <input type="number" id="length" name="length" min="6" max="64" value="12">
+                <button onclick="generatePassword()">Generate Password</button>
+                <div class="result" id="passwordResult"></div>
+            </div>
+
+            <div class="section">
+                <h2>Additional Features</h2>
+                <p>PassGuard's Password Generator can be accessed via our browser extension, enabling you to create and autofill strong passwords directly in your browser without leaving the site. The extension supports password generation on the go, allowing you to strengthen your online security across all platforms.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>PassGuard - Your Passwords, Safely Stored</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function generatePassword() {
+            const length = document.getElementById('length').value;
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            document.getElementById('passwordResult').innerText = `Generated Password: ${password}`;
+        }
+    </script>
+
+</body>
+</html>

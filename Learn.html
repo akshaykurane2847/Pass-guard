@@ -1,0 +1,219 @@
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Learn More About PassGuard</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             background-color: #f4f4f9;
+             margin: 0;
+             padding: 0;
+             overflow-x: hidden;
+         }
+ 
+         header {
+             background: #fff;
+             border-bottom: 1px solid #ddd;
+             padding: 10px 0;
+             position: fixed;
+             top: 0;
+             width: 100%;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+             z-index: 1000;
+         }
+         .header-container {
+             max-width: 900px;
+             margin: 0 auto;
+             padding: 0 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+         }
+         .logo {
+             font-size: 24px;
+             font-weight: bold;
+             color: #333;
+         }
+         nav {
+             display: flex;
+             gap: 15px;
+         }
+         nav a {
+             text-decoration: none;
+             color: #333;
+             font-size: 16px;
+             transition: color 0.3s ease;
+         }
+         nav a:hover {
+             color: #ff8c00;
+         }
+ 
+         .container {
+             max-width: 900px;
+             margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+             padding: 20px;
+         }
+ 
+         h1 {
+             text-align: center;
+             color: #333;
+         }
+         h2 {
+             color: #333;
+             border-bottom: 2px solid #ff8c00;
+             padding-bottom: 5px;
+             margin-bottom: 20px;
+         }
+         p {
+             font-size: 18px;
+             line-height: 1.6;
+             color: #555;
+             margin-bottom: 20px;
+         }
+         .features, .security, .getting-started, .faq {
+             margin-top: 30px;
+             opacity: 0; /* Initial state for animation */
+             transform: translateY(30px); /* Initial position for animation */
+             transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* Animation timing */
+         }
+         .features.show, .security.show, .getting-started.show, .faq.show {
+             opacity: 1; /* Final state for animation */
+             transform: translateY(0); /* Final position for animation */
+         }
+         .faq h3 {
+             font-size: 20px;
+             color: #333;
+             margin-bottom: 10px;
+         }
+         .faq p {
+             margin-left: 20px;
+             margin-bottom: 20px;
+         }
+         .features ul, .security ul {
+             list-style-type: none;
+             padding: 0;
+         }
+         .features li, .security li {
+             background-color: #fff;
+             margin: 10px 0;
+             padding: 15px;
+             border-radius: 8px;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+         }
+         footer {
+             text-align: center;
+             margin-top: 50px;
+             padding: 20px;
+             background-color: #333;
+             color: #fff;
+         }
+         footer a {
+             color: #ff8c00;
+             text-decoration: none;
+         }
+         footer a:hover {
+             text-decoration: underline;
+         }
+     </style>
+ </head>
+ <body>
+ 
+     <!-- Header Section -->
+     <header>
+         <div class="header-container">
+             <div class="logo">PassGuard</div>
+             <nav>
+                 <a href="index.html">Home</a>
+                 <a href="Feature.html">Features</a>
+                 <a href="About.html">About</a>
+                 <a href="signup.html">Sign Up</a>
+             </nav>
+         </div>
+     </header>
+ 
+     <div class="container">
+         <h1>Learn More About PassGuard</h1>
+ 
+         <div class="features">
+             <h2>Comprehensive Features</h2>
+             <ul>
+                 <li><strong>Secure Vault:</strong> Your passwords are stored in an encrypted vault with top-tier security protocols, ensuring that only you can access your data.</li>
+                 <li><strong>Autofill Across Devices:</strong> PassGuard’s autofill functionality works across all major browsers and apps, automatically filling in your credentials without compromising security.</li>
+                 <li><strong>Password Generator:</strong> Create strong, complex passwords with our built-in generator, ensuring maximum protection against cyber-attacks.</li>
+                 <li><strong>Cross-Device Sync:</strong> Synchronize your passwords across multiple devices, including desktop, mobile, and tablet, so you can access them anytime, anywhere.</li>
+                 <li><strong>Secure Notes:</strong> Store sensitive information like recovery codes, security questions, and more in encrypted notes.</li>
+             </ul>
+         </div>
+ 
+         <div class="security">
+             <h2>Security and Privacy</h2>
+             <ul>
+                 <li><strong>Zero-Knowledge Encryption:</strong> PassGuard uses zero-knowledge encryption, meaning only you have access to your data. Even we cannot view your passwords.</li>
+                 <li><strong>Two-Factor Authentication (2FA):</strong> Enable 2FA for an extra layer of security. This ensures that only you can access your vault, even if your password is compromised.</li>
+                 <li><strong>Biometric Login:</strong> Use fingerprint or face recognition on supported devices to log in securely and conveniently.</li>
+                 <li><strong>Data Breach Alerts:</strong> We monitor known data breaches and alert you if any of your stored credentials are compromised, allowing you to act swiftly.</li>
+                 <li><strong>Regular Audits:</strong> Our system undergoes regular security audits to ensure it stays ahead of potential threats.</li>
+             </ul>
+         </div>
+ 
+         <div class="getting-started">
+             <h2>Getting Started with PassGuard</h2>
+             <p>Getting started with PassGuard is easy and only takes a few steps:</p>
+             <ol>
+                 <li><strong>Create an Account:</strong> Sign up for an account with your email and a strong master password.</li>
+                 <li><strong>Set Up 2FA:</strong> For added security, we highly recommend enabling two-factor authentication during the setup process.</li>
+                 <li><strong>Import Your Passwords:</strong> You can import your existing passwords from other password managers, or manually enter them into your PassGuard vault.</li>
+                 <li><strong>Download the App:</strong> Install PassGuard on your desktop, mobile, or tablet to access your passwords from anywhere.</li>
+                 <li><strong>Start Using Autofill:</strong> Once set up, PassGuard will autofill your login credentials on websites and apps, making your login process seamless and secure.</li>
+             </ol>
+         </div>
+ 
+         <div class="faq">
+             <h2>Frequently Asked Questions</h2>
+             <h3>How secure is PassGuard?</h3>
+             <p>PassGuard uses end-to-end encryption to protect your data, ensuring that only you have access to your passwords. Additionally, features like two-factor authentication and breach alerts provide extra layers of security.</p>
+ 
+             <h3>Can I access PassGuard on multiple devices?</h3>
+             <p>Yes! PassGuard allows you to sync your passwords across all your devices, including desktops, mobile phones, and tablets, so you can access your passwords wherever you are.</p>
+ 
+             <h3>What happens if I forget my master password?</h3>
+             <p>Since we use zero-knowledge encryption, we cannot reset your master password. However, you can set up recovery methods like an emergency contact or recovery keys when you create your account.</p>
+ 
+             <h3>How does the password generator work?</h3>
+             <p>Our password generator creates complex and unique passwords for each account, making it difficult for hackers to guess. You can customize the length and type of characters used in the password to suit your needs.</p>
+         </div>
+ 
+     </div>
+ 
+     <footer>
+         <p>PassGuard - Your Passwords, Safely Stored</p>
+         <p><a href="privacy.html">Privacy Policy</a> | <a href="Terms.html">Terms of Service</a></p>
+     </footer>
+ 
+     <script>
+         // Function to add the 'show' class to elements on scroll
+         function onScroll() {
+             const elements = document.querySelectorAll('.features, .security, .getting-started, .faq');
+             elements.forEach(element => {
+                 const rect = element.getBoundingClientRect();
+                 if (rect.top < window.innerHeight - 100) {
+                     element.classList.add('show');
+                 }
+             });
+         }
+ 
+         // Trigger the onScroll function on page load and scroll
+         window.addEventListener('load', onScroll);
+         window.addEventListener('scroll', onScroll);
+     </script>
+ 
+ </body>
+ </html>
+ 
+

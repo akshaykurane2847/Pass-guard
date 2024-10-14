@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PassGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll Animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0; /* Adjust margin-top to account for fixed header */
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 0.2s forwards;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 0.4s forwards;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 0.6s forwards;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 0.8s forwards;
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 1s forwards;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover Effect for Links */
+        a {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ff6500;
+        }
+
+        /* Section Reveal on Scroll */
+        .section {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .section:nth-of-type(1) {
+            animation-delay: 0.2s;
+        }
+
+        .section:nth-of-type(2) {
+            animation-delay: 0.4s;
+        }
+
+        .section:nth-of-type(3) {
+            animation-delay: 0.6s;
+        }
+
+        .section:nth-of-type(4) {
+            animation-delay: 0.8s;
+        }
+
+        .section:nth-of-type(5) {
+            animation-delay: 1s;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s 1.2s forwards;
+        }
+
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Hover Effect */
+        .section:hover {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease-in-out;
+            padding-left: 15px;
+            border-left: 5px solid #ff8c00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">PassGuard</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Feature.html">Features</a>
+                <a href="About.html">About</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: [Insert Date]</p>
+
+        <p>At <strong>PassGuard</strong>, we are committed to safeguarding your privacy. This Privacy Policy explains how we collect, use, and protect the information you provide when you use our password manager services, website, and mobile applications (collectively referred to as "Services").</p>
+
+        <p>By using <strong>PassGuard</strong>, you agree to the terms outlined in this Privacy Policy. Please read it carefully.</p>
+
+        <div class="section">
+            <h2>1. Information We Collect</h2>
+            <p>We collect and process the following types of information when you use our Services:</p>
+
+            <h3>a. Personal Information</h3>
+            <ul>
+                <li><strong>Email Address:</strong> Used for account creation, login, and communication.</li>
+                <li><strong>Master Password:</strong> We never store your master password. It is used to encrypt and decrypt your data locally on your device.</li>
+            </ul>
+
+            <h3>b. Usage Data</h3>
+            <ul>
+                <li><strong>IP Address</strong> and <strong>Browser Type:</strong> To provide basic functionality and ensure system security.</li>
+                <li><strong>Device Information:</strong> Including your device type, operating system, and app version.</li>
+            </ul>
+
+            <h3>c. Stored Data</h3>
+            <ul>
+                <li><strong>Password Vault:</strong> All passwords and sensitive information stored in <strong>PassGuard</strong> are encrypted with end-to-end encryption. Only you can access this information using your Master Password, which we do not store or have access to.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>Provide and maintain our Services.</li>
+                <li>Communicate with you regarding product updates, security alerts, and support.</li>
+                <li>Improve the security, usability, and performance of our Services.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Data Security</h2>
+            <p>Security is our top priority. We employ a range of security measures, including:</p>
+            <ul>
+                <li><strong>Zero-Knowledge Encryption:</strong> All sensitive information (passwords, secure notes, etc.) is encrypted locally on your device with a key derived from your master password. We do not have access to your master password or stored information.</li>
+                <li><strong>Two-Factor Authentication (2FA):</strong> We encourage the use of 2FA to enhance the security of your account.</li>
+                <li><strong>Encryption Standards:</strong> We use industry-leading AES-256 encryption to protect your data at rest and TLS to secure data during transmission.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Sharing of Information</h2>
+            <p>We do not sell, rent, or share your personal information with third parties, except in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> We may share non-sensitive information with trusted service providers who assist us in operating our Services, provided they agree to strict confidentiality and data protection terms.</li>
+                <li><strong>Legal Compliance:</strong> We may disclose your personal information to comply with legal obligations, enforce our Terms of Service, or protect the rights and safety of our users and others.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Your Control and Access to Information</h2>
+            <ul>
+                <li><strong>Access & Update:</strong> You can access and update your account information at any time through your user profile.</li>
+                <li><strong>Account Deletion:</strong> You may delete your account at any time, and upon doing so, all personal data, including stored passwords and sensitive information, will be permanently deleted from our servers.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Cookies</h2>
+            <p>We use cookies to:</p>
+            <ul>
+                <li><strong>Enhance User Experience:</strong> Cookies help us remember your preferences and settings.</li>
+                <li><strong>Analytics:</strong> We use cookies to understand how users interact with our website to improve functionality. You can opt-out of cookies via your browser settings.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Data Retention</h2>
+            <p>We retain your information only as long as necessary to provide our Services or comply with legal obligations. Upon account deletion, your encrypted data is permanently erased from our servers.</p>
+        </div>
+
+        <div class="section">
+            <h2>8. Children’s Privacy</h2>
+            <p><strong>PassGuard</strong> is not intended for use by children under the age of 16. We do not knowingly collect personal information from anyone under 16 years of age. If we become aware that we have inadvertently collected such information, we will take immediate steps to delete it.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via email or by posting an updated version on our website. We encourage you to review this policy periodically.</p>
+        </div>
+
+        <div class="section">
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding your privacy or this Privacy Policy, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@passguard.com">support@passguard.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>PassGuard - Your Passwords, Safely Stored</p>
+        <p><a href="privacy.html">Privacy Policy</a> 
+            | <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+</body> 
+</html>
